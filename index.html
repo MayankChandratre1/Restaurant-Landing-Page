@@ -19,6 +19,9 @@
     }
   </style>
   <body>
+    <div class="loader-back">
+      <div class="loader"></div>
+    </div>
     <div class="up">
       <a href="#home"
         ><span class="material-symbols-outlined"> arrow_upward </span></a
@@ -132,5 +135,20 @@
         </ul>
       </div>
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(window).ready(function (e) {
+         setTimeout(removeLoader, 2000);
+      });
+      function removeLoader() {
+         $(".loader-back").fadeOut(900, function () {
+            $(".loader-back").remove();
+            $("body").css({
+               overflowY:"scroll"
+              });
+            
+         });
+      }
+    </script>
   </body>
 </html>
