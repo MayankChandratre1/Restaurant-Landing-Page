@@ -360,10 +360,13 @@ section.contact {
     text-align: center;
   }
   .menuImages img {
-    width: 100%;
+    width: calc(100vw/3);
     /* min-height: 20vh; */
     height: 30vh;
     background-color: black;
+  }
+  .menuImages p{
+    width: calc(100vw/4);
   }
 
   .feedbacks h3,
