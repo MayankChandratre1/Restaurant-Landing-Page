@@ -184,7 +184,6 @@ section.about {
 
 .menuImages img#plateImg3 {
   width: 100%;
-  rotate: 90deg;
 }
 .menus .desc {
   padding: 1rem;
@@ -363,7 +362,7 @@ section.contact {
   .menuImages img {
     width: 100%;
     /* min-height: 20vh; */
-    /* height: 30vh; */
+    height: 30vh;
     background-color: black;
   }
 
